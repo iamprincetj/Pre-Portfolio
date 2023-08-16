@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+#input {
+    padding: 10px;
+    position: relative;
+    top: 14vh;
+    left: 35%;
+    width: 30%;
+    height: 3em;
+    border-radius: 5px;
+}
+
+#container {
+    position: absolute;
+    top: 20vh;
+    left: 15%;
+    width: 70%;
+    height: 60vh;
+    background-color: rgba(138, 134, 134, 0.5);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container #paginate {
+    display: inline-block;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.nav-btn {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#container #wrapper, #container #paginate {
+    margin: 10px;
+}
+
+.active {
+    background-color: aquamarine;
+    color: #FFF;
+}
+
+.btn:hover, .nav-btn:hover {
+    background-color: aquamarine;
+    color: #fff;
+}
+
+.item {
+    width: 100%;
+    height: 3em;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color: rgba(136, 132, 244, 0.7);
+}
+
+.div_title, .div_overview, .div_date {
+    margin: 10px;
+    border: 1px solid rgb(163, 159, 159);
+    padding: 10px;
+}
+
+.btn-back {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 25px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:focus ~ .btn-back {
+    display: block;
+}
+
+.watch-btn {
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(251, 251, 120, 0.8);
+    color: rgb(86, 197, 234);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+#back-btn {
+    font-size: 25px;
+    margin: 10px;
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #dcd9d9;
+}
