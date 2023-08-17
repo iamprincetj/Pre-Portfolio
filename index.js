@@ -10,8 +10,8 @@ let getBackBtn;
 let getInput = document.querySelector("#input");
 let getPrevBtn = document.querySelector("#btn-prev");
 let getNextBtn = document.querySelector("#btn-next");
-let getNumOfPage = localStorage.getItem("numOfPage");
-let currPage = localStorage.getItem("currentPage");
+let getNumOfPage = parseInt(localStorage.getItem("numOfPage"));
+let currPage = parseInt(localStorage.getItem("currentPage"));
 let currentPage;
 let getBackBtn1 = document.querySelector("#back-btn");
 
@@ -180,7 +180,7 @@ makePage = {
                 }
                 localStorage.setItem("currentPage", currentPage); // then store it in localstorage
 
-                this.DisplayList(result[0], getWrapper, rows, currentPage); //then we want to display the list on that specific page
+                this.DisplayList(result[0], getWrapper, rows, parseInt(currentPage)); //then we want to display the list on that specific page
 
                 this.btnColor(buttons[currentPage-1], buttons); // then put the color on the right button again
             });
@@ -193,7 +193,7 @@ makePage = {
                 };
 
                 // you know what all this do
-                localStorage.setItem("currentPage", currentPage);
+                localStorage.setItem("currentPage", parseInt(currentPage));
                 this.DisplayList(result[0], getWrapper, rows, currentPage);
                 this.btnColor(buttons[currentPage-1], buttons);
             });
